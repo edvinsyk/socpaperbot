@@ -129,7 +129,7 @@ def create_post(
     print(json.dumps(resp.json(), indent=2))
     resp.raise_for_status()
 
-
+# %%
 # RSS feeds
 urls = {
     "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
@@ -207,7 +207,7 @@ def filter_results(results):
             }
     return filtered_results
 
-
+# %%
 def write_json_from_rss(urls=urls, filename="combined.json"):
     results = get_rss_feed(urls)
     filtered_results = filter_results(results)
@@ -233,7 +233,6 @@ def write_json_from_rss(urls=urls, filename="combined.json"):
     return filtered_results, archive
 
 
-# %%
 def main():
     pull, archive = write_json_from_rss()
     ######################################################################
