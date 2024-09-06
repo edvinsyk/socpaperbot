@@ -189,7 +189,7 @@ def clean_abstract(text, journal):
     elif journal == "Sociological Science":
         start = text.find("Abstract")
         end = text.rfind("Close")
-        text[start + len("Abstract") : end].strip()
+        text = text[start + len("Abstract") : end].strip()
 
     text = text.strip()
     return text
