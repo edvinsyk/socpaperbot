@@ -130,9 +130,6 @@ def create_post(
     resp.raise_for_status()
 
 
-
-
-
 # RSS feeds
 urls = {
     "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
@@ -143,6 +140,7 @@ urls = {
     # AJS not working atm, because they don't include abstracts in their RSS-feed
     "American Journal of Sociology": "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ajs",
     "SocArXiv": "https://share.osf.io/api/v2/feeds/atom/?elasticQuery=%7B%22bool%22%3A%7B%22must%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22*%22%7D%7D%2C%22filter%22%3A%5B%7B%22term%22%3A%7B%22sources%22%3A%22SocArXiv%22%7D%7D%5D%7D%7D",
+    "Sociological Science": "https://sociologicalscience.com/category/articles/feed/",
 }
 
 
@@ -151,45 +149,61 @@ def get_rss_feed(urls):
     results = {}
     for k, v in urls.items():
         f = feedparser.parse(v)
-        results.update({
-            entry.get("link", ""): {
-                "title": entry.get("title", ""),
-                "link": entry.get("link", ""),
-                "description": entry.get("description", ""),
-                "journal": k,
+        results.update(
+            {
+                entry.get("link", ""): {
+                    "title": entry.get("title", ""),
+                    "link": entry.get("link", ""),
+                    "description": entry.get("description", ""),
+                    "journal": k,
+                }
+                for entry in f.entries
             }
-            for entry in f.entries
-        })
+        )
     return results
+
 
 def is_valid_paper(title, description):
     """Check if entry is a valid paper, not a review or other entry"""
     title_lower = title.lower()
-    return all([
-        len(title) >= 50,
-        len(description) >= 50,
-        not title_lower.startswith("review"),
-        not title_lower.startswith("corrigendum"),
-    ])
+    return all(
+        [
+            len(title) >= 50,
+            len(description) >= 50,
+            not title_lower.startswith("review"),
+            not title_lower.startswith("corrigendum"),
+        ]
+    )
+
 
 def clean_abstract(text, journal):
-    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r"<[^>]+>", "", text)
 
-    if journal in ["Socius", "American Sociological Review (AoP)", "American Sociological Review"]:
-         text = re.sub(r'^.*?\.', '', text, 1) # Removes everything up to first "."
+    if journal in [
+        "Socius",
+        "American Sociological Review (AoP)",
+        "American Sociological Review",
+    ]:
+        text = re.sub(r"^.*?\.", "", text, 1)  # Removes everything up to first "."
+
+    elif journal == "Sociological Science":
+        start = text.find("Abstract")
+        end = text.rfind("Close")
+        text[start + len("Abstract") : end].strip()
 
     text = text.strip()
     return text
 
+
 def filter_results(results):
     filtered_results = {}
     for k, v in results.items():
-        if is_valid_paper(v['title'], v['description']):
+        if is_valid_paper(v["title"], v["description"]):
             journal = v.get("journal", "")
             filtered_results[k] = {
                 **v,
-                "title": v['title'],
-                "description": clean_abstract(v['description'], journal)
+                "title": v["title"],
+                "description": clean_abstract(v["description"], journal),
             }
     return filtered_results
 
@@ -218,6 +232,7 @@ def write_json_from_rss(urls=urls, filename="combined.json"):
 
     return filtered_results, archive
 
+
 # %%
 def main():
     pull, archive = write_json_from_rss()
@@ -230,7 +245,8 @@ def main():
     for k, v in pull.items():
         if k not in archive:  # if not already posted
             post_str = (
-                f"{v['title']}\n{v['link']}\n{''.join(v['description'])}"[:288] + "\n #sociology"
+                f"{v['title']}\n{v['link']}\n{''.join(v['description'])}"[:288]
+                + "\n #sociology"
             )
             create_post(post_str.replace("\n", " "))
             time.sleep(random.randint(60, 300))
@@ -247,6 +263,7 @@ def main():
         )
         create_post(post_str.replace("\n", " "))
         time.sleep(random.randint(30, 60))
+
 
 # %%
 if __name__ == "__main__":
