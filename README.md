@@ -12,3 +12,4 @@ Currently limited to:
 3) Socius
 4) Social Forces
 5) SocArXiv preprints
+6) Sociological Science
