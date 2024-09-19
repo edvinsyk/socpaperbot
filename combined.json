@@ -2716,5 +2716,11 @@
     "link": "https://share.osf.io/preprint/E015B-BF8-472",
     "description": "This paper uses original panel data from Senegal to evaluate the effect of co-residence with elderly individuals on the educational attainment of female children. To identify this effect, I exploit the deaths of elderly co-residents which occur during the study period in an empirical strategy which relies on triple-differences with child fixed-effects. I show that an event of elderly death is associated with 23% additional education completed over a period of 4 years by affected girls. I present evidence that changes in demand for informal caregiving among older female children within the household are one of the mechanisms at play. These results highlight the importance of female teenagers in caregiving activities and suggest that policies that increase the availability of formal care for the elderly could reduce gender inequalities in education in contexts similar to Senegal.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E020A-1CA-CDC": {
+    "title": "Rap Music as a Social Reflection: Exploring the Relationship Between Social Conditions and Lyrical Expressions in Rap Music",
+    "link": "https://share.osf.io/preprint/E020A-1CA-CDC",
+    "description": "What social factors affect the content of rap music? Previous studies in this area have documented the differing themes present in rap, such as violence, sexual behavior, and materialism. Scholars have interpreted these themes as artistic reflections of social conditions, such as urban poverty and mass incarceration. The purpose of this study is to extend this basic analysis and test hypotheses derived from this \u201csocial reflection\u201d theory of lyrical content. Using data from 27,445 underground and mainstream rap singles released in the United States from 1971 to 2016, we test the hypothesis that the content of rap lyrics is correlated with quantitative measurements of crime, sexual assaults, economic conditions, and substance abuse. We find a positive correlation of rap lyric content with the first three factors, but not substance abuse. These findings support and extend the social reflection hypothesis, but also indicate limitations and nuances in the theory.",
+    "journal": "SocArXiv"
   }
 }
