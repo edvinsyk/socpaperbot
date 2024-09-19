@@ -2680,5 +2680,11 @@
     "link": "https://share.osf.io/preprint/E0001-BE1-5A5",
     "description": "Although the existence and negative effects of education-job mismatch in the labor market are widely known and accepted, literature on this topic in the Japanese labor market is lacking owing to unique labor market specifics and data limitations, despite the importance of the issue. This study examines the effects of horizontal education-job mismatch on organizational commitment, job satisfaction, and future career vision among employees from a medium-sized company in Japan using longitudinal personnel microdata and employee satisfaction survey data. The empirical results of this study show that horizontal education-job mismatch in a medium-sized Japanese company has a negative impact on employees\u2019 psychological adjustment, even after controlling for individual-specific effects. The findings suggest that horizontal education-job mismatch has the potential for substantial economic, organizational, and individual costs, which is consistent with previous research in various global contexts.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E021F-1DE-A65": {
+    "title": "\u201cThey Only Silence the Truth\u201d: COVID-19 Retractions and the Politicization of Science",
+    "link": "https://share.osf.io/preprint/E021F-1DE-A65",
+    "description": "Retracted COVID-19 articles have circulated widely on social media. Although retractions are intended to correct the scientific record, when trust in science is low, they may instead be interpreted as evidence of censorship or simply ignored. We performed a content analysis of tweets about the two most widely shared retracted COVID-19 articles, Mehra20 and Rose21, before and after their retractions. When Mehra20 was seen as a politicized attack on Donald Trump and hydroxychloroquine, its retraction was broadly shared as proof that the article had been published for political reasons. However, when Rose21 was seen as evidence of vaccine harm by vaccine opponents, its retraction was either ignored or else framed as a conspiracy to censor the truth. These results demonstrate how retractions can be selectively used by scientific counterpublics to reframe the regulation of science as evidence of its institutional corruption.",
+    "journal": "SocArXiv"
   }
 }
