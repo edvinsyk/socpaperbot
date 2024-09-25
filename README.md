@@ -13,3 +13,4 @@ Currently limited to:
 4) Social Forces
 5) SocArXiv preprints
 6) Sociological Science
+7) Sociological Methodology
