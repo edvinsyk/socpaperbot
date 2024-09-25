@@ -183,6 +183,7 @@ def clean_abstract(text, journal):
         "Socius",
         "American Sociological Review (AoP)",
         "American Sociological Review",
+        "Sociological Methodology",
     ]:
         text = re.sub(r"^.*?\.", "", text, 1)  # Removes everything up to first "."
 
