@@ -141,6 +141,7 @@ urls = {
     "American Journal of Sociology": "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ajs",
     "SocArXiv": "https://share.osf.io/api/v2/feeds/atom/?elasticQuery=%7B%22bool%22%3A%7B%22must%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22*%22%7D%7D%2C%22filter%22%3A%5B%7B%22term%22%3A%7B%22sources%22%3A%22SocArXiv%22%7D%7D%5D%7D%7D",
     "Sociological Science": "https://sociologicalscience.com/category/articles/feed/",
+    "Sociological Methods and Research": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=smra&type=etoc&feed=rss"
 }
 
 
@@ -184,6 +185,7 @@ def clean_abstract(text, journal):
         "American Sociological Review (AoP)",
         "American Sociological Review",
         "Sociological Methodology",
+        "Sociological Methods and Research"
     ]:
         text = re.sub(r"^.*?\.", "", text, 1)  # Removes everything up to first "."
 

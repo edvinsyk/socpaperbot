@@ -5,7 +5,7 @@ Scraper that posts sociology papers to bluesky: https://bsky.app/profile/socpape
 Idea and implementation from: https://github.com/apoorvalal/bsky_paperbot/
 
 
-Currently limited to: 
+Currently limited to:
 
 1) American Sociological Review
 2) Annual Review of Sociology
@@ -14,3 +14,4 @@ Currently limited to:
 5) SocArXiv preprints
 6) Sociological Science
 7) Sociological Methodology
+8) Sociological Methods and Research
