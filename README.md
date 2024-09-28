@@ -15,3 +15,4 @@ Currently limited to:
 6) Sociological Science
 7) Sociological Methodology
 8) Sociological Methods and Research
+9) European Sociological Review
