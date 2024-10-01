@@ -3694,5 +3694,11 @@
     "link": "https://journals.sagepub.com/doi/abs/10.1177/23780231241276332?ai=2b4&mi=ehikzz&af=R",
     "description": "Studies examining the consequences of intergenerational income mobility for individuals often face challenges due to multicollinearity between origin, destination, and a mobility construct based on the origin-destination difference. This article introduces a novel conceptualization of mobility, termed \u201creachability mobility,\u201d which is based on the \u201ceasiness\u201d of achieving a particular origin-destination combination within a population. This approach contrasts with the traditional lattice-based conceptualization. Furthermore, this study proposes using copulas\u2014a statistical tool that captures the dependence structure between incomes of two generations while remaining insensitive to their marginal distributions\u2014to measure reachability mobility. When combined with a standard measure of mobility direction, this approach allows scholars to simultaneously estimate the effects of origin, destination, and mobility along with numerous other methodological advantages. An illustrative example is provided that investigates the effect of intergenerational income mobility on mental health status using data from the National Longitudinal Survey of Youth 1979.",
     "journal": "Socius"
+  },
+  "https://share.osf.io/preprint/E01DC-248-F1E": {
+    "title": "Recover the Missing Dimension of Managerial Risk of Stockholdings and Option Grants",
+    "link": "https://share.osf.io/preprint/E01DC-248-F1E",
+    "description": "Nie (2023) suggests that Markowitz (1952) asset risk misses the indispensable dimension of time length of asset holder\u2019s risk, thereby preventing scholars from measuring managerial risk of stockholdings and option grants bound with untradability. This study captures managerial risk as the risk over the (in)visible time lengths of untradability of the underlying assets and their outcomes until they turn fully tradable. Nie (2023) argues that asset risk causes volatility, but not vice versa, implying that Black and Scholes (1973) effectively price options as risk-free. Our option value includes the underlying stock and a deferred payment weighted on their probabilities at maturity.",
+    "journal": "SocArXiv"
   }
 }
