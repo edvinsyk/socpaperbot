@@ -3730,5 +3730,11 @@
     "link": "https://share.osf.io/preprint/E0026-15C-4B1",
     "description": "In this chapter we review accumulating research on the social learning mechanisms that power cultural evolution. We begin by outlining some adaptive challenges that learners face, emphasizing cases of individual learning. Many of these challenges are shared with social learning, but it also helps highlight the circumstances under which social learning is particularly valuable. We then turn to the specific inferential challenges that must be addressed by cognitive mechanisms for social learning. We review several proposed heuristics that humans and other animals use to extract information from conspecifics, while considering how they deal with each inferential challenge. We finish by describing some of the big debates regarding the cognition underlying cultural capacities in humans and how they provide avenues for future research.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E01D1-9C4-D45": {
+    "title": "Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments",
+    "link": "https://share.osf.io/preprint/E01D1-9C4-D45",
+    "description": "Conjoint experiments enable the measurement of preferences in complex, multidimensional choice settings. But the problem of how to aggregate over multiple dimensions to make substantively meaningful statements of the form \"respondents typically prefer feature A to B\" has not received a concise, systematic treatment in the literature. This paper provides a set of theoretical and statistical tools for understanding the behavior of conjoint estimands that do just that. Specifically, we focus on the choice of whether to target an estimand that includes indirect comparisons between two features in addition to direct comparisons. We show that although this permits researchers to incorporate more observed tasks in estimation, it can also raise problems of interpretability when indirect and direct comparisons diverge in sign and magnitude. We develop a novel set of statistical tools, which integrate easily with existing workflows, to guide practitioners in choosing the estimand that best suits their needs.",
+    "journal": "SocArXiv"
   }
 }
