@@ -3742,5 +3742,11 @@
     "link": "https://share.osf.io/preprint/E018F-7E3-137",
     "description": "Political science research increasingly relies on text classification to gauge subtle concepts like toxicity or anger. However, common methods treat words and phrases in isolation, ignoring the relational dynamics where meaning is embedded in the interaction between phrases and their textual environment. Recent transformer-based language models overcome such limitations, but are rarely used in published political science articles, possibly due to misconceptions about their data and computational requirements. This article explains the pretrain-finetune paradigm for transformer-based language models and its potential to improve text analysis in political science by harnessing robust models trained on extensive datasets while requiring relatively small amounts of labeled data and computational resources from researchers. To demonstrate its effectiveness, I employ the approach to identify toxic language in conversation threads following US Senators' tweets.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E01FE-178-541": {
+    "title": "Adaptive challenges for cognition underlying cultural learning",
+    "link": "https://share.osf.io/preprint/E01FE-178-541",
+    "description": "In this chapter we review accumulating research on the social learning mechanisms that power cultural evolution. We begin by outlining some adaptive challenges that learners face, emphasizing cases of individual learning. Many of these challenges are shared with social learning, but it also helps highlight the circumstances under which social learning is particularly valuable. We then turn to the specific inferential challenges that must be addressed by cognitive mechanisms for social learning. We review several proposed heuristics that humans and other animals use to extract information from conspecifics, while considering how they deal with each inferential challenge. We finish by describing some of the big debates regarding the cognition underlying cultural capacities in humans and how they provide avenues for future research.",
+    "journal": "SocArXiv"
   }
 }
