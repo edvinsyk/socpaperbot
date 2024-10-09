@@ -4078,5 +4078,11 @@
     "link": "https://share.osf.io/preprint/E0129-E88-E21",
     "description": "Efforts to replicate portions of the scientific literature have lead to widely varying and often low rates of replicability. This has raised concerns over a ``replication crisis'' whereby many of the statistically significant claims in the published literature are thought to be false positives, due to some combination of publication bias and widespread use of questionable research practices. However, formal meta-scientific models invoking false positives lead to conclusions that often conflict with observational findings and require additional assumptions to reconcile varying rates of replicability across areas of research. Here, we present a minimal, alternative model of how replication failures can occur even in the absence of false positives. Using our model, we show that variation in estimates of replicability across social science is well explained as an artifact of replication sample size. We additionally demonstrate that key features of reformed science and multi-site replications can be explained without false positives. Our results are consistent with evidence suggesting that file-drawer sizes are likely much smaller, and Questionable Research Practices less abundant, than required by false positive models. We anticipate our findings will be a starting point for more formal and nuanced discussion of the health of the scientific literature and areas for improvement.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0142-38C-F3A": {
+    "title": "AMMICO, an AI-based Media and Misinformation Content Analysis Tool",
+    "link": "https://share.osf.io/preprint/E0142-38C-F3A",
+    "description": "ammico (AI-based Media and Misinformation Content Analysis Tool) is a publicly available software package written in Python 3, whose purpose is the simultaneous evaluation of the text and graphical content of image files. After describing the software features, we provide an assessment of its performance using a multi country, multi-language data set containing COVID-19 social media disinformation posts. We conclude by highlighting the tool\u2019s advantages for communication research.",
+    "journal": "SocArXiv"
   }
 }
