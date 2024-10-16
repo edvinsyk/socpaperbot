@@ -4630,5 +4630,11 @@
     "link": "https://academic.oup.com/esr/advance-article/doi/10.1093/esr/jcae035/7822394?rss=1",
     "description": "We introduce a novel approach for decomposing sibling correlations in socioeconomic attainment into group-specific components. These groups are defined at the family level, based on factors such as parental income, marital status, race, or the gender composition of siblings. Unlike existing studies that compare sibling correlations across different groups, our method accounts for differences in average outcomes between groups in the overall outcome distribution. This approach results in a group-specific measure of persistence in the overall outcome distribution, contrasting with the \u2018within-group\u2019 measure commonly used in the literature. Additionally, we propose a straightforward \u2018counterfactual\u2019 framework to identify which groups have a greater impact on trends or country differences in sibling correlations. We present three examples that demonstrate the utility of our method.",
     "journal": "European Sociological Review"
+  },
+  "https://share.osf.io/preprint/E0036-70E-1D2": {
+    "title": "Five Observations on Five Years of Contact Hypothesis Research",
+    "link": "https://share.osf.io/preprint/E0036-70E-1D2",
+    "description": "I offer five observations on the state of contact hypothesis research five years after the publication of The Contact Hypothesis Re-evaluated. First, Rigorous field experiments have proliferated, and they often find conflicting, disappointing results. Second, to explain those conflicting results, I propose a theory of multiple forms of prejudice, some of which are amenable to contact and some of which are not. Third, light touch interventions are appropriate for light prejudices. Fourth, assimilation is an undertheorized moderator of contact. Fifth, we would still benefit from more systematic tests of Gordon Allport\u2019s moderating conditions: shared goals, cooperation, equal status, and institutional support.",
+    "journal": "SocArXiv"
   }
 }
