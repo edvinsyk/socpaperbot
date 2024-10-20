@@ -4852,5 +4852,11 @@
     "link": "https://share.osf.io/preprint/E0033-6B6-AF9",
     "description": "The author has withdrawn this preprint due to the lack of formal authorization from the affiliated organization and funding agencies prior to its submission. After submission, the author was made aware via email from the affiliated organization that the preprint infringes on intellectual property rights governed by agreements with these entities.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E013A-F83-D85": {
+    "title": "Contacts in contexts: Measuring intergroup contact opportunities at the population-scale through linked administrative and survey data",
+    "link": "https://share.osf.io/preprint/E013A-F83-D85",
+    "description": "The notion of \u201csocial opportunity structure\u201d (SOS) is central in research on segregation and intergroup relations, but notoriously difficult to measure because it requires capturing potential rather than actual contacts across multiple social contexts at once. We propose a new comprehensive approach to measure the notion of SOS for a whole country. We leverage population-scale social network data from administrative registers to measure the size and social composition of five social contexts: families, households, neighborhoods, workplaces, and schools. We link this SOS at the individual level to survey-sourced personal network data on intergroup social ties. We showcase the potential of this population-scale measurement approach through data linkage by studying how the probability that Dutch natives have a social tie with an immigrant varies depending on the presence of immigrants and immigrant descendants in their SOS. We reflect on the advantages and limitations of our approach by documenting the data linkage process in detail and discussing the longitudinal and network nature of the data.",
+    "journal": "SocArXiv"
   }
 }
