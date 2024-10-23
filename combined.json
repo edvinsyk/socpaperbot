@@ -4948,5 +4948,11 @@
     "link": "https://share.osf.io/preprint/E01CB-1EE-D7F",
     "description": "Understanding variation in mortality age schedules across populations is a key objective of demographic and epidemiological research. Commonly used decomposi- tion methods partition differences in demographic summary indicators\u2014such as life expectancy at birth\u2014into age-specific contributions for only two populations. Here, we demonstrate how singular value decomposition\u2014an existing mathematical decomposition technique\u2014can be used to summarize and understand variation among mortality schedules from multiple populations. We explain how singular value decomposition can be used to (a) extract key mortality age patterns from a set of mortality schedules; and (b) quantify the relative importance of these age patterns for the various mortality schedules included in the set. We demonstrate this method by decomposing variation in the mortality schedules of US states, showing that (1) most of the variation in 2019 was due to differences in young-adult mortality, and that (2) different US states achieved the same high level of life expectancy at birth with fundamentally different mortality profiles. The singular value decomposition approach complements existing pairwise decomposition methods for describing and summarizing mortality differences across populations, and we discuss further potential areas of application.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0146-A04-6DE": {
+    "title": "Topic Brief: Guidance for Reporting on Studies of Open and Equitable Scholarship",
+    "link": "https://share.osf.io/preprint/E0146-A04-6DE",
+    "description": "The absence of standardized measurement and reporting hinders progress toward more reliable and equitable scientific practices. This topic brief summarized existing practice across stages of the research lifecycle to promote transparency and reliability, and to support the evaluation of participation and equity. The brief also discusses issues surrounding integrating these practices within the context of limited-term fellowship programs.",
+    "journal": "SocArXiv"
   }
 }
