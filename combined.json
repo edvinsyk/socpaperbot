@@ -5344,5 +5344,17 @@
     "link": "https://share.osf.io/preprint/E002D-BD8-C05",
     "description": "Antisemitism has been rising for decades and worsened following the events of Oct 7, 2023. Although anecdotal evidence suggests that these trends extend into the US medical community, quantitative data have been lacking. To address this gap, we quantitated publications about antisemitism, analyzed social media posts from the accounts of 220,405 healthcare professionals, and disseminated a survey to members of Jewish medical associations. Publications and social media posts about antisemitism rose >5-fold, while posts promoting antisemitic stereotypes increased 2-4-fold. Most Jewish-identifying medical students and professionals (75.4%) reported exposure to antisemitism. Together, our results suggest that antisemitism is escalating within the US healthcare community.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0070-F1A-426": {
+    "title": "The Tellus Calendar: A Metric and Perennial Proposal for Calendar Reform",
+    "link": "https://share.osf.io/preprint/E0070-F1A-426",
+    "description": "The Gregorian Calendar, while widely used, has numerous structural inconsistencies that impact personal, financial, and scheduling practices on a global scale. This paper presents the Tellus Calendar, a reform proposal grounded in metric principles inspired by the French Republican Calendar (FRC) but adapted to modern needs. By introducing a 12-month calendar with 10-day weeks and 30-day months, this proposal aims to achieve uniformity and predictability without displacing familiar seasonal cycles or cultural milestones. The Tellus Calendar offers an achievable balance between innovation and tradition, providing a perennial and globally viable alternative to our current system. Beyond structural improvements, the Tellus Calendar also promises enhanced efficiency in financial, academic, and social planning, simplifying long-term scheduling and fostering a more synchronised global society.",
+    "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E00E4-982-180": {
+    "title": "Measuring Historical Changes in Capitalist Ideology with Word Embeddings",
+    "link": "https://share.osf.io/preprint/E00E4-982-180",
+    "description": "Ideology is frequently discussed as an important factor in maintaining the current capitalist economic order. To date, however, descriptions of long-term changes in capitalist ideology remain mostly qualitative. By using computational methods (word embeddings) on two large corpora of historical English texts (Google books & Corpus of Historical American English), this article is the first to provide quantitative data on such long-term changes between 1850 and 1999. It thus tests three prominent claims found in the existing literature and presents the following main findings: 1) The rise of neoliberalism is represented by a weaking discourse on economic regulation rather than by an increase in liberal discourse. 2) Meritocratic values are promoted most intensely in times of high inequality. 3) Intrinsic work motivation becomes more important over time, but extrinsic motivation remains dominant. These findings have various theoretical and practical implications.",
+    "journal": "SocArXiv"
   }
 }
