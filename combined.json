@@ -6256,5 +6256,11 @@
     "link": "https://share.osf.io/preprint/E0051-606-249",
     "description": "Estimates of intergenerational educational mobility are generally computed using a combination of self- and proxy-reports of one's and one's parents' education. Such reports are easily collected, offering a cost-effective alternative to collecting multiple self-reports or register data. However, the bias that proxy-reports could introduce in the measurement of intergenerational educational mobility is rarely assessed. Our study fills this gap and assesses how reliable people are when they report their parents' or their child's educational attainment. We find that both parents and children tend to underestimate the educational distance between themselves and their family members, thus inflating estimates of educational reproduction. This trend is larger when children act as proxy-reporters. Another limitation of using children\u2019s proxy-reported information is the number of missing answers, which is lower when parents are asked to proxy-report their child's education. In a simulation exercise, we establish that the bias introduced by proxy reports is not negligible, with self-reported intergenerational regression coefficients being 16\\% higher when a proxy-report is used. Our results show that proxy reports",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0046-7FF-D92": {
+    "title": "The Subjective Wealth Distribution: How it Arises and Why it Matters to Inform Policy?",
+    "link": "https://share.osf.io/preprint/E0046-7FF-D92",
+    "description": "We estimate the relationship between people\u2019s biased perceptions of their rank in the wealth distribution and savings behavior. Using unique wealth survey data from Austria, we uncover a significant bias in self-assessed distributional ranks. Our estimates indicate that individuals who underestimate their wealth rank have a savings rate approximately 50% higher than those who assess their rank accurately. Preferences that feature relative wealth in the utility function can explain this relationship. Our findings inform contemporary macroeconomic models and contribute to understanding the impact of information bubbles on economic decisions. (Stone Center on Socio-Economic Inequality Working Paper)",
+    "journal": "SocArXiv"
   }
 }
