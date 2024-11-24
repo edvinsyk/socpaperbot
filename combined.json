@@ -6670,5 +6670,17 @@
     "link": "https://share.osf.io/preprint/E0199-D9B-D32",
     "description": "Our leap into emergency online teaching (EOT) during the COVID-19 pandemic was like tumbling down a rabbit hole into a surreal digital landscape, where synchronous and asynchronous teaching spaces became our new wonderland, each presenting its challenges and surprises. However, we merely encountered countless tips and professional development advice about how technology and AI tools can replace face-to-face instruction, foregrounding a technocentric discourse that ignored the centrality of educational theories for online teaching to consolidate student learning. In this paper, I argue that prevailing educational conditions, influenced by technological advancements, can find valuable support in Freire\u2019s age-old yet enduring educational philosophy. Such a philosophy requires us to reimagine how to shift from policing knowledge to embracing new pedagogies that instil in our students the ethics and values they need to navigate the vast information readily available for consumption. I conclude that, like Alice and the Mad Hatter, we must embrace creativity and curiosity to cultivate robust online educational spaces that foster values, ethics, and proactive dispositions essential for thriving in today\u2019s fast-paced, technology-driven world.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0068-54B-B03": {
+    "title": "Towards multiple ontologies in science mapping. A tribute to Loet Leydesdorff",
+    "link": "https://share.osf.io/preprint/E0068-54B-B03",
+    "description": "This article reviews Loet Leydesdorff\u2019s contributions to science mapping. It explains how over the years, his mapping techniques evolved from journal mapping to overlays over global maps of science and finally towards interactive interfaces portraying multiple classifications and ontologies. It then critically reviews the challenges of current approaches to science mapping, which implicitly assume a \u2018natural\u2019 underlying structure, with examples from recent case studies. We observe that existing algorithmic approaches, either based on citation or semantic approaches, have problems of logic consistency of the categories obtained, which belong to methods, materials, empirical objects or theories. I propose that science mapping should engage with the conceptual goals of analyses that could define the type of ontologies relevant for each specific study. To do this science mapping should embrace mixed-methods to generate plural classifications and multiple ontologies which respond more specifically to sociological and policy questions.",
+    "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E00BD-BD7-CE0": {
+    "title": "Rethinking Open Science: shifting from access to connections to care for equity and inclusion",
+    "link": "https://share.osf.io/preprint/E00BD-BD7-CE0",
+    "description": "Current modes of developing Open Science are not leading to expected outcomes: evidence is growing that, first, in some dimensions they are leading to more inequity and second, their societal impact is unclear or limited. In the face of these insights, I argue that the conceptualisation and promotion of Open Science needs rethinking to serve its goal of serving epistemic justice and societal impact. Instead of focusing on making the products of research digitally accessible, Open Science should focus on the processes of knowledge exchange between researchers and social communities.",
+    "journal": "SocArXiv"
   }
 }
