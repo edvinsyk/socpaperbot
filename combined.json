@@ -6712,5 +6712,11 @@
     "link": "https://share.osf.io/preprint/E0025-FEA-22C",
     "description": "This paper provides an analytical exploration of how network characteristics influence residential segregation. Building upon the foundational Schelling model, I develop an Agent-based simulation wherein agents are embedded within a social network structure. This approach allows for the experimental manipulation of network features such as homophily, clustering, and degree, enabling the assessment of their individual and combined impacts on segregation levels, patterns, and the stability of the socio-spatial system. I find that certain configurations of these network features can exacerbate residential sorting to levels exceeding those predicted by the original Schelling model. These outcomes underscore the critical role of social network dynamics, particularly the significance of weak ties, in driving a system toward a segregated state. The results contribute to the broader sociological discourse on social networks, highlighting the complex interplay between network structure and social phenomena, and offering new insights into the mechanisms underlying residential segregation.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0148-ECB-3A8": {
+    "title": "The effects of marginalisation in areas of high political centralisation",
+    "link": "https://share.osf.io/preprint/E0148-ECB-3A8",
+    "description": "Recent research indicates the existence of \u201cplaces that don\u2019t matter\u201d, where residents harbour feelings of abandonment, prompting a tilt towards anti-system narratives. Yet, the effects of territorial marginalisation extend beyond voting behaviour, influencing deeper underlying factors. Utilising data from 9,924 cases in the region of Valparaiso in Chile, this study reveals that living in politically marginalised cities in contexts of high political centralisation correlates with reduced political knowledge and internal political efficacy, even when accounting for other sociodemographic characteristics. By focusing on territorial marginalisation, this analysis offers a fresh perspective on the interplay between individual sociodemographic characteristics and political engagement.",
+    "journal": "SocArXiv"
   }
 }
