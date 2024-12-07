@@ -7294,5 +7294,11 @@
     "link": "https://share.osf.io/preprint/E004C-FA0-005",
     "description": "Written ethnographic field notes may fall short of describing the complexity and subtlety of human interaction and experience when exploring intimacy and pleasure. In the frame of a feminist research project that investigates women's 'unruly' intimacy as they age, I used drawings as part of my field notes to enrich and diversify the material collected. This essay focuses on a selection of drawings to explore the potential of this medium as a living practice that can \u2018look along\u2019 instead of just \u2018looking at\u2019.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E00DE-39B-A10": {
+    "title": "Mapping the Participation of Venture Capital in Education: An Investment Network Perspective",
+    "link": "https://share.osf.io/preprint/E00DE-39B-A10",
+    "description": "Over the past two decades, venture capital (VC) has played a critical role in shaping the educational technology (edtech) market. This study employs social network analysis (SNA) to examine investment data, offering a novel perspective on the relational structure and dynamics of edtech investment. We construct bipartite networks of investors and edtech companies before and after the introduction of the Chromebook to the US market and the onset of the COVID-19 pandemic. We investigate differences in the structure of these bipartite networks using exponential random graph models, distributions of network statistics, and comparisons between the collapsed single-mode actor and event networks. Using these tools, we make estimates of influence and structural features that predict the probability of edge formation, highlighting patterns that contribute to the understanding of the structural dynamics of the edtech market, the key players driving its evolution, and the way each respond to exogenous shocks in the educational space.",
+    "journal": "SocArXiv"
   }
 }
