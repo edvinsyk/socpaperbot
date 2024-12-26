@@ -9154,5 +9154,11 @@
     "link": "https://share.osf.io/preprint/E015B-C41-502",
     "description": "India's vision of becoming a high-income nation by 2047 is ambitious because of its significant forthcoming challenges to be faced to avoid the middle-income trap. In spite of its rapid growth during the last couple of decades, the economy has stagnated in its contribution to the agricultural and service sectors, and thus is unable to transition to a more advanced and diversified nation. Amid global challenges, India's robust recovery after the financial and the COVID-19 -led crisis instils optimism, with forecasts envisioning a transition to high-income status, surpassing 30 trillion USD GDP. However, the vision of a \u2018Viksit Bharat\u2019 (developed India) by 2047, marking 100 years of independence, would face serious challenges. For India, the road ahead is fraught with structural issues, climate risks, and socio-economic inequalities that would constrain achieving long-term prosperity. Accounting for climate and oil shocks, India is projected to reach the status of a high income nation not before 2080.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E00A9-FD2-490": {
+    "title": "The GC Wealth Project Data Warehouse v.1.2 - Documentation",
+    "link": "https://share.osf.io/preprint/E00A9-FD2-490",
+    "description": "The GC Wealth Project has launched an updated version of its data warehouse. The update was carried out by Ignacio Flores, Luca Giangregorio, Max Longmuir, Francesca Subioli, and Matteo Targa, working under the direction of Salvatore Morelli. Key improvements include new data concepts, refinements to the structure of existing databases, and expanded coverage of regions, countries, and time periods. Updates have been made to the sections on Wealth Topography, Wealth Inequality Trends, and Estate, Inheritance, and Gift Taxes (EIG). Furthermore, a new section dedicated to Inheritance Trends is scheduled for release in the coming months. (Stone Center on Socio-Economic Inequality Working Paper)",
+    "journal": "SocArXiv"
   }
 }
