@@ -9490,5 +9490,11 @@
     "link": "https://journals.sagepub.com/doi/abs/10.1177/00031224241302828?ai=2b4&mi=ehikzz&af=R",
     "description": "In her ASA presidential address, Misra calls for making solution-oriented, community-engaged, and participatory research more central in the discipline. She argues that solution-oriented work can strengthen the discipline, clarifying the promise and importance of sociology. She first discusses how sociologists engage in solution-oriented work that they communicate publicly. She then uses her collaborative work to suggest how to design research geared toward solving social problems. She emphasizes how feminist and decolonial methods that bring sociological researchers into collaborative and participatory partnerships with broader communities can develop transformative solutions, building communities of hope, justice, and joy. After discussing sociological approaches that empower communities, she emphasizes recognizing, valuing, and centering community-engaged research in the discipline.",
     "journal": "American Sociological Review"
+  },
+  "https://share.osf.io/preprint/E0076-B2F-B31": {
+    "title": "The Political Benefits of the Monoculture: Estimating the Electoral Effect of the Market Facilitation Program",
+    "link": "https://share.osf.io/preprint/E0076-B2F-B31",
+    "description": "We analyze the effect of federal cash transfers on incumbent electoral support. The 2019 Market Facilitation Program set per-county payment rates for field crop producers via a novel formula. We leverage an exogenous component of the formula driven by historical crop-level trade volatility to identify the effect of excessive subsidies on the 2020 Presidential election. Our design-based randomization inference strategy allows us to construct valid statistical tests in the presence of complex cross-county dependencies. Instrumenting for 2019 MFP disbursements, we find each additional \\$10 million in payments increased county 2020 two-party Republican vote share by about 1.8 percentage points.",
+    "journal": "SocArXiv"
   }
 }
