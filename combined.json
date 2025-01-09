@@ -9496,5 +9496,11 @@
     "link": "https://share.osf.io/preprint/E0076-B2F-B31",
     "description": "We analyze the effect of federal cash transfers on incumbent electoral support. The 2019 Market Facilitation Program set per-county payment rates for field crop producers via a novel formula. We leverage an exogenous component of the formula driven by historical crop-level trade volatility to identify the effect of excessive subsidies on the 2020 Presidential election. Our design-based randomization inference strategy allows us to construct valid statistical tests in the presence of complex cross-county dependencies. Instrumenting for 2019 MFP disbursements, we find each additional \\$10 million in payments increased county 2020 two-party Republican vote share by about 1.8 percentage points.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E009F-BF2-799": {
+    "title": "Nudging loan of children\u2019s books - Quasi-Experimental Evidence from a Library Book Giveaway Program",
+    "link": "https://share.osf.io/preprint/E009F-BF2-799",
+    "description": "Libraries are important to provide reading resources for children, in particular for disadvantaged families. Research shows that access to libraries and reading resources is important to developing children\u2019s (early) reading skills. This paper examines whether a library book giveaway program was effective in increasing parents reading investments in the form of loan of children\u2019s books. Libraries in many Danish municipalities attempt to improve families\u2019 use of children\u2019s libraries by sending out invitations offering families a free book present if they come visit their local library. I test the effectiveness of this intervention using Danish registry data on the universe of public library loans, and information on the staggered treatment of families in 3 municipalities. Results based on a difference-in-differences design suggest that the program did not increase loan of children\u2019s books - neither in families with high or low income, families with/without a college degree, or families with/without established reading practices. In contrast, the program had a small unintended negative effect among advantaged families.",
+    "journal": "SocArXiv"
   }
 }
