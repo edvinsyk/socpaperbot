@@ -11836,5 +11836,11 @@
     "link": "https://share.osf.io/preprint/E0071-E11-63B",
     "description": "This paper investigates the long-term effects of fiscal austerity on democratic institutions. While previous studies have established a link between economic crises, fiscal consolidations, and short-term electoral outcomes, our analysis extends this discussion by examining how austerity-induced economic insecurity undermines key dimensions of democracy over time. Using a comprehensive dataset of narrative fiscal shocks across 17 OECD economies (1978\u20132020) and 14 Latin American and Caribbean economies (1989\u20132020), we employ a semi-parametric estimation method to identify the causal impact of fiscal austerity on democratic backsliding. Our findings indicate that contractionary fiscal policies weaken institutional checks, reduce freedom of expression, and erode electoral integrity. These effects persist beyond immediate electoral cycles, leading to broader democratic erosion. The study highlights the importance of policy choices in shaping political institutions and suggests that alternative macroeconomic strategies, such as countercyclical fiscal policies and targeted social protection, may help mitigate the risks associated with austerity while preserving democratic governance.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E00E5-8D0-AC3": {
+    "title": "Interactions with Non-Linear Treatment Effects: Quantities of Interest and Interpretation",
+    "link": "https://share.osf.io/preprint/E00E5-8D0-AC3",
+    "description": "This paper addresses the critical challenges of analyzing interactions when treatment effects are non-linear. First, the paper argues that estimating models that assume linear treatment effects in interactive settings can lead to misleading interpretations. Second, it proposes a systematic approach for analyzing and presenting interaction effects when non-linear treatment effects are involved. Two examples are discussed to illustrate the problems considered in this paper, as well as the proposed solution. Moreover, the limitations of recent alternatives to deal with non-linear treatment effects are discussed. The paper concludes replicating a recent paper, showing the potential limitations of current practices in the literature.",
+    "journal": "SocArXiv"
   }
 }
