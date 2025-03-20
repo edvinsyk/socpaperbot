@@ -12298,5 +12298,17 @@
     "link": "https://share.osf.io/preprint/E00DD-D13-A60",
     "description": "Generative AI (GenAI) is quickly becoming a valuable tool for sociological research. Already, sociologists employ GenAI for tasks like classifying text and simulating human agents. We point to another major use case: the extraction of structured information from unstructured text. Information Extraction (IE) is an established branch of Natural Language Processing, but leveraging the affordances of this paradigm has thus far required familiarity with specialized models. GenAI changes this by allowing researchers to define their own IE tasks and execute them via targeted prompts. This article explores the potential of open-source large language models for IE by extracting and encoding biographical information (e.g., age, occupation, origin) from a corpus of newspaper obituaries. As we proceed, we discuss how sociologists can develop and evaluate prompt architectures for such tasks, turning codebooks into \u201cpromptbooks.\u201d We also evaluate models of different sizes and prompting techniques. Our analysis showcases the potential of GenAI as a flexible and accessible tool for IE, while also underscoring risks like non-random error patterns that can bias downstream analyses.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E012E-23A-3E4": {
+    "title": "Portraits of Power: Facial Appearances and the Tacit Domain of Political Selection in China",
+    "link": "https://share.osf.io/preprint/E012E-23A-3E4",
+    "description": "As the epitome of modern, rational organizations, bureaucracies are often believed to select candidates based on rules and reason. We argue that intuitive---and even instinctive---assessments of candidates' external appearances sometimes underpin seemingly rational and calculated decisions. Using a novel, AI-based algorithm that learns and reproduces human assessments of facial appearances at scale, we examine how perceived facial traits influence the careers of over 4,000 mid- and senior-level Chinese officials.  We find that officials who look more competent, trustworthy, and less aggressive enjoy significantly better promotion prospect and lower purge risk than their peers. Warmth-related traits (e.g., trustworthiness and non-aggressiveness) are especially valued at higher-level promotions and for male candidates. Additional analyses, including conjoint experiments with real officials, demonstrate that appearances' influence over selection preferences is comparable to performance or political connections. These findings challenge the prevailing meritocratic and relation-based theories of bureaucratic selection and highlight the role of impressions in the working of government institutions.",
+    "journal": "SocArXiv"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251322517?ai=2b4&mi=ehikzz&af=R": {
+    "title": "Locating Cultural Holes Brokers in Diffusion Dynamics Across Bright Symbolic Boundaries",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251322517?ai=2b4&mi=ehikzz&af=R",
+    "description": "Although the literature on cultural holes has expanded considerably in recent years, there is no concrete measure in that literature to locate cultural holes brokers. This article develops a conceptual framework grounded in social network theory and ...",
+    "journal": "Sociological Methods and Research"
   }
 }
