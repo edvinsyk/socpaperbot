@@ -12448,5 +12448,17 @@
     "link": "https://journals.sagepub.com/doi/abs/10.1177/00031224251318051?ai=2b4&mi=ehikzz&af=R",
     "description": "In most evaluation systems\u2014such as those governing the allocation of prestigious awards\u2014the evaluator\u2019s primary task is to reward the highest quality candidates. However, these systems are imperfect; top performers may not be acknowledged and thus be ...",
     "journal": "American Sociological Review"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/23780231251325772?ai=2b4&mi=ehikzz&af=R": {
+    "title": "Black, White, or Multiracial? How Socioeconomic and Political Context Shapes Racial Classification",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/23780231251325772?ai=2b4&mi=ehikzz&af=R",
+    "description": "In this study, the authors examine whether and how city-level socioeconomic and political context shape racial classification practices in U.S. Black-White families. The authors link IPUMS 2012\u20132022, American Community Survey population estimates, and ...",
+    "journal": "Socius"
+  },
+  "https://share.osf.io/preprint/E01E7-A25-E3E": {
+    "title": "Public Responses to Jihadist Terrorism on Social Media",
+    "link": "https://share.osf.io/preprint/E01E7-A25-E3E",
+    "description": "In recent years, several major terror attacks in the name of political Islam have shaken Europe. This study analyzes public responses after such attacks to explore their impact on public views of immigration and intergroup relations. In particular, the study examines how public reactions to Jihadist terrorism are expressed on social media. The theoretical predictions, derived from combining terror management theory, group threat theory, and the concept of social resilience, are empirically tested using validated Keyword-Assisted Topic Modeling (keyATM). Unlike traditional topic modeling approaches, keyATM incorporates pre-specified keywords, enhancing both the precision and interpretability of results while mitigating the impact of researcher subjectivity. The study is based on over 100,000 time-stamped and geo-coded Tweets on immigration and related issues across four languages in the week following eleven major Islamist terrorist attacks in nine European cities posted by users located in the city of the attack. Consistent with the theoretical predictions, the findings reveal that both threat-related and tolerance-related topics emerge prominently across all four languages. However, deeper analyses uncover temporal shifts in the discourse: While initial reactions often reflect nationalist and exclusionary views, later stages show a rise in inclusionary and tolerance-oriented topics. These results highlight the dynamic nature of social media debates on immigration issues after dramatic events, where initial threat-driven responses often give way to more inclusive and tolerance-oriented discussions as time progresses, underscoring the role of social media in shaping and reflecting the evolving public response to terrorism.",
+    "journal": "SocArXiv"
   }
 }
