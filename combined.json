@@ -12442,5 +12442,11 @@
     "link": "https://share.osf.io/preprint/E014B-BD6-22F",
     "description": "The advent of conflict event data initiated various research agendas under the umbrella of subnational conflict processes and beyond. Event data are mostly confined to information on the type of violence and actors, the number of casualties, time, and location. However, the text sources on which they are based contain much more information and are often provided for individual observations. Using abductions and forced disappearances in the Armed Conflict Location and Event Data, we generate additional variables from the notes variable about the number of abductees, subdivided by gender and whether they are adults or children, and individuals killed or released in the process, and whether there was a ransom demand. We demonstrate that large language models can extract additional information about events with an accuracy of over 90 percent. This opens up new, previously impossible research agendas such as analyzing government abductions and near-real time kidnappings. The proposed approach can easily be extended to collect additional information, such as the tactics and claimed objectives of the perpetrators. Importantly, we also show that open-weight models perform at least as well as closed-weight ones for this particular task, and that there are substantial differences in computing time across models.",
     "journal": "SocArXiv"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00031224251318051?ai=2b4&mi=ehikzz&af=R": {
+    "title": "(Not) Getting What You Deserve: How Misrecognized Evaluators Reproduce Misrecognition in Peer Evaluations",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00031224251318051?ai=2b4&mi=ehikzz&af=R",
+    "description": "In most evaluation systems\u2014such as those governing the allocation of prestigious awards\u2014the evaluator\u2019s primary task is to reward the highest quality candidates. However, these systems are imperfect; top performers may not be acknowledged and thus be ...",
+    "journal": "American Sociological Review"
   }
 }
