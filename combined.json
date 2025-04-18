@@ -13630,5 +13630,11 @@
     "link": "https://share.osf.io/preprint/E0162-1AC-2E8",
     "description": "This paper presents a novel approach to measuring inequality, centering on the principles of relationship and subjectivity. We describe the limitations of traditional metrics like Gini indexes in capturing the complex, inherently relational nature of inequality. By considering inequality as a series of subjective judgments made by individuals within their social cohorts, this study introduces a method where observations on inequality are aggregated both locally and globally, offering a nuanced view that accounts for both in-group and out-group disparities and  proposing an inferential procedure to identify significant disparities at multiple levels. The approach is demonstrated through a case study on global wealth inequality, showcasing the dynamic and multifaceted nature of economic disparities across trading blocs.",
     "journal": "SocArXiv"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251326819?ai=2b4&mi=ehikzz&af=R": {
+    "title": "The Insight-Inference Loop: Efficient Text Classification via Natural Language Inference and Threshold-Tuning",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251326819?ai=2b4&mi=ehikzz&af=R",
+    "description": "Modern computational text classification methods have brought social scientists tantalizingly close to the goal of unlocking vast insights buried in text data\u2014from centuries of historical documents to streams of social media posts. Yet three barriers ...",
+    "journal": "Sociological Methods and Research"
   }
 }
