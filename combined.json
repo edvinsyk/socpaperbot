@@ -13870,5 +13870,17 @@
     "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251330582?ai=2b4&mi=ehikzz&af=R",
     "description": "Generative artificial intelligence (AI) is increasingly presented as a potential substitute for humans, including as research subjects. However, there is no scientific consensus on how closely these in silico clones can emulate survey respondents. While ...",
     "journal": "Sociological Methods and Research"
+  },
+  "https://share.osf.io/preprint/E00E0-D0E-00A": {
+    "title": "The treatment of control variables in population science: Deconfounding in Demography 1995-2020",
+    "link": "https://share.osf.io/preprint/E00E0-D0E-00A",
+    "description": "Note: This paper was presented in an oral session on causal inferences at the 2022 Population Association of America in Atlanta, GA.  \n\nThe practice of causal inference experienced significant growth throughout the social sciences in the past twenty-five years. However, it is unclear how these advances have been incorporated into quantitative sociology. To address this, we reviewed publications in Demography in six 5-year waves from 1995 to 2020. We assessed how authors describe the process of deconfounding statistical models. We found that the treatment of confounding factors was highly varied. Inconsistency in the descriptions of variable selection made it difficult to create a reliable quantitative measure. Still, there was minimal evidence that authors coalesced around the improvements in causal inference, at least in how they described control variables. While alignment between demography and improvements in causal inference would help consolidate and improve the science, this alignment is not evident. We explain some benefits of greater consistency and address how peer-review journals could affect the rationale behind variable selection in quantitative sociology.",
+    "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0138-1AC-261": {
+    "title": "Who Is Left Behind? Economic Status Loss and Populist Radical Right Voting",
+    "link": "https://share.osf.io/preprint/E0138-1AC-261",
+    "description": "Citizens\u2019 resentment at losing out to the rest of society is commonly regarded as the foundation of the demand for the populist radical right (PRR). Yet whether this motive has an objective economic basis remains disputed. Relying on European Social Survey individual-level data from 23 elections across Western Europe, combined with Eurostat data, I demonstrate that the PRR polls better among social classes facing economic status loss. To do so, I leverage a novel positional measure of income. This approach allows me to gauge economic status loss as a distinct experience from worsening financial circumstances, which has been the initial focus of empirical research. Evidence that economic status loss is the economic engine of PRR support is corroborated by data on cultural stances and redistributive preferences. My study confirms the complementarity of cultural- and economic-based explanations of PRR voting and reveals one electoral consequence of rising economic inequalities.",
+    "journal": "SocArXiv"
   }
 }
