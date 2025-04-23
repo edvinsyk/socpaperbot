@@ -13906,5 +13906,29 @@
     "link": "https://share.osf.io/preprint/E0079-3EC-116",
     "description": "Researchers have long recognized the role of metaphor in conceptualizing states. We contribute to research on the conceptualization of STATE concepts in two ways. First, we identify a not-yet-recognized metaphor system commonly used to conceptualize states: STATES ARE PHYSICAL QUALITIES. We contend that STATES ARE PHYSICAL QUALITIES is an elaboration of the image-schematic STATES ARE LOCATIONS metaphor, with a higher degree of specificity, affording entailments not supported by STATES ARE LOCATIONS. After introducing the physical qualities metaphor system, we examine the function of STATES ARE PHYSICAL QUALITIES in the social world, finding that when people use it to evaluate objects across many domains. Specifically, there is a significant distinction between two prototypical physical qualities\u2014processed and unprocessed\u2014used to conceptualize socially salient state differences, with \u201ccooking\u201d as the prototypical form of processing. Particularly in the domain of aesthetic evaluation, this is seen in the metaphor AUTHENTIC IS UNPROCESSED. In practical domains such as sports and science, this is seen in the metaphor DEVELOPED IS PROCESSED. In all these cases, the evaluation of people and objects is grounded in the perception of their states, comprehended as physical qualities.",
     "journal": "SocArXiv"
+  },
+  "https://share.osf.io/preprint/E0090-9FF-65E": {
+    "title": "7-digit Product-level Supply-Use and Input-Output Tables Using ASI Data",
+    "link": "https://share.osf.io/preprint/E0090-9FF-65E",
+    "description": "This paper constructs 7-digit product Supply-Use Tables (SUTs) and symmetric \nInput-Output Tables (IOTs) for the Indian economy using microdata from the Annual Survey \nof Industries (ASI) for the period 2016-2021. We outline the methodology for generating input \nflows and reconciling registered and unregistered sector data via NPCMS-NIC concordance. \nThe transition from SUTs to IOTs is explained using the Industry Technology Assumption. We \napply this framework to analyse the economic impact\u2014specifically Domestic Value Added \n(DVA) and employment influenced by production and exports. A case study of India's mobile \nphone sector reveals significant output growth, import substitution, an increase in exports, a \nshift in DVA/FVA shares, notable employment growth, with a leaning towards contractual \nlabour, and increased female participation. These tables are valuable for analysing sectoral \ninterdependencies and industrial policy effectiveness in India.",
+    "journal": "SocArXiv"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251326865?ai=2b4&mi=ehikzz&af=R": {
+    "title": "The Mixed Subjects Design: \nTreating Large Language \nModels as Potentially \nInformative Observations",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251326865?ai=2b4&mi=ehikzz&af=R",
+    "description": "Large language models (LLMs) provide cost-effective but possibly inaccurate predictions of human behavior. Despite growing evidence that predicted and observed behavior are often notinterchangeable, there is limited guidance on using LLMs to obtain valid ...",
+    "journal": "Sociological Methods and Research"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251321152?ai=2b4&mi=ehikzz&af=R": {
+    "title": "Networks Beyond Categories: A Computational Approach to Examining Gender Homophily",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251321152?ai=2b4&mi=ehikzz&af=R",
+    "description": "Social networks literature has explored homophily, the tendency to associate with similar others, as a critical boundary-making process contributing to segregated networks along the lines of identities. Yet, social network research generally ...",
+    "journal": "Sociological Methods and Research"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251314037?ai=2b4&mi=ehikzz&af=R": {
+    "title": "The Target Study: A Conceptual Model and Framework for Measuring Disparity",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251314037?ai=2b4&mi=ehikzz&af=R",
+    "description": "We present a conceptual model to measure disparity\u2014the target study\u2014where social groups may be similarly situated (i.e., balanced) on allowable covariates. Our model, based on a sampling design, does not intervene to assign social group membership or ...",
+    "journal": "Sociological Methods and Research"
   }
 }
