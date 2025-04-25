@@ -14104,5 +14104,17 @@
     "link": "https://share.osf.io/preprint/E0194-D51-A5F",
     "description": "Poverty and gender inequality remain pressing global issues, with women in rural areas often \nbearing the brunt due to systemic social and economic disparities. This study explores the \nlivelihood strategies and decision-making power of women involved in Self-Help Groups \n(SHGs) in Ashuti I Gram Panchayat of Maheshtala Block, South 24 Parganas, West Bengal. \nAnchored in the framework of the Sustainable Development Goals\u2014particularly \"No \nPoverty\" and \"Gender Equality\"\u2014the research aims to assess whether SHG participation \ntranslates into increased agency and leadership for women. Using qualitative methods, \nincluding structured interviews with 46 SHG members and two rounds of Focus Group \nDiscussions, the study evaluates women's role in household and financial decisions. Findings \nreveal that while women exhibit autonomy in personal and reproductive choices, they remain \nsignificantly dependent on male counterparts for financial, asset-related, and political \ndecisions. The proximity to urban Kolkata has not yet translated into significant \nempowerment, highlighting gaps in training, leadership development, and awareness. The \nstudy concludes that targeted sensitisation and capacity-building initiatives are essential to \nenhance women\u2019s decision-making capabilities and truly harness the potential of SHGs in \npromoting gender equity.",
     "journal": "SocArXiv"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251325243?ai=2b4&mi=ehikzz&af=R": {
+    "title": "Large Language Models for Text Classification: From Zero-Shot Learning to Instruction-Tuning",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251325243?ai=2b4&mi=ehikzz&af=R",
+    "description": "Large language models (LLMs) have tremendous potential for social science research as they are trained on vast amounts of text and can generalize to many tasks. We explore the use of LLMs for supervised text classification, specifically the application to ...",
+    "journal": "Sociological Methods and Research"
+  },
+  "https://journals.sagepub.com/doi/abs/10.1177/00491241251334124?ai=2b4&mi=ehikzz&af=R": {
+    "title": "Conceptualizing Job and Employment Concepts for Earnings Inequality Estimands With Linked Employer-Employee Data1",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/00491241251334124?ai=2b4&mi=ehikzz&af=R",
+    "description": "We examine variations in pay gap estimates and inferences associated with distinct conceptualizations of jobs and employment contexts under legal and comparable worth theories of pay bias. We find that job titles produce smaller estimates of within job ...",
+    "journal": "Sociological Methods and Research"
   }
 }
