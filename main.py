@@ -6,6 +6,7 @@ https://github.com/apoorvalal/bsky_paperbot/blob/master/paperbot.py
 Thanks!
 
 """
+
 import json
 import os
 import random
@@ -129,6 +130,7 @@ def create_post(
     print(json.dumps(resp.json(), indent=2))
     resp.raise_for_status()
 
+
 # %%
 # RSS feeds
 urls = {
@@ -142,7 +144,7 @@ urls = {
     "SocArXiv": "https://share.osf.io/api/v2/feeds/atom/?elasticQuery=%7B%22bool%22%3A%7B%22must%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22*%22%7D%7D%2C%22filter%22%3A%5B%7B%22term%22%3A%7B%22sources%22%3A%22SocArXiv%22%7D%7D%5D%7D%7D",
     "Sociological Science": "https://sociologicalscience.com/category/articles/feed/",
     "Sociological Methods and Research": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=smra&type=etoc&feed=rss",
-    "European Sociological Review": "https://academic.oup.com/rss/site_5160/advanceAccess_3023.xml"
+    "European Sociological Review": "https://academic.oup.com/rss/site_5160/advanceAccess_3023.xml",
 }
 
 
@@ -179,15 +181,17 @@ def is_valid_paper(title, description):
 
 
 def clean_abstract(text, journal):
-    text = re.sub(r"<[^>]+>", "", text) # Removes symbols
-    text = re.sub(r"\b(abstract)(\w*)", r"\2", text, flags=re.I) # Removes 'Abstract' from text
+    text = re.sub(r"<[^>]+>", "", text)  # Removes symbols
+    text = re.sub(
+        r"\b(abstract)(\w*)", r"\2", text, flags=re.I
+    )  # Removes 'Abstract' from text
 
     if journal in [
         "Socius",
         "American Sociological Review (AoP)",
         "American Sociological Review",
         "Sociological Methodology",
-        "Sociological Methods and Research"
+        "Sociological Methods and Research",
     ]:
         text = re.sub(r"^.*?\.", "", text, 1)  # Removes everything up to first "."
 
@@ -211,6 +215,7 @@ def filter_results(results):
                 "description": clean_abstract(v["description"], journal),
             }
     return filtered_results
+
 
 # %%
 def write_json_from_rss(urls=urls, filename="combined.json"):
@@ -256,17 +261,18 @@ def main():
             time.sleep(random.randint(60, 300))
             archive[k] = v
             new_posts += 1
-    if new_posts == 0 & (len(archive) > 2):
-        print("No new papers found; posting random paper from archive")
-        random_paper = random.choice(list(archive.values()))
-        post_str = (
-            f"{random_paper['title']}\n{random_paper['link']}\n{''.join(random_paper['description'])}"[
-                :288
-            ]
-            + "\n #sociology"
-        )
-        create_post(post_str.replace("\n", " "))
-        time.sleep(random.randint(30, 60))
+    # if new_posts == 0 & (len(archive) > 2):
+    #     print("No new papers found; posting random paper from archive")
+    #     random_paper = random.choice(list(archive.values()))
+    #     post_str = (
+    #         f"{random_paper['title']}\n{random_paper['link']}\n{''.join(random_paper['description'])}"[
+    #             :288
+    #         ]
+    #         + "\n #sociology"
+    #     )
+    #     create_post(post_str.replace("\n", " "))
+    #     time.sleep(random.randint(30, 60))
+    #
 
 
 # %%
