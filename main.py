@@ -15,124 +15,10 @@ import sys
 import time
 from datetime import datetime, timezone
 from typing import Dict, List
+from atproto import Client, client_utils
 
 import feedparser
-import requests
 
-
-def bsky_login_session(pds_url: str, handle: str, password: str) -> Dict:
-    """login to blueksy
-
-    Args:
-        pds_url (str): bsky platform (default for now)
-        handle (str): username
-        password (str): app password
-
-    Returns:
-        Dict: json blob with login
-    """
-    resp = requests.post(
-        pds_url + "/xrpc/com.atproto.server.createSession",
-        json={"identifier": handle, "password": password},
-    )
-    resp.raise_for_status()
-    return resp.json()
-
-
-def parse_urls(text: str) -> List[Dict]:
-    """parse URLs in string blob
-
-    Args:
-        text (str): string
-
-    Returns:
-        List[Dict]: span of url
-    """
-    spans = []
-    # partial/naive URL regex based on: https://stackoverflow.com/a/3809435
-    # tweaked to disallow some training punctuation
-    url_regex = rb"[$|\W](https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*[-a-zA-Z0-9@%_\+~#//=])?)"
-    text_bytes = text.encode("UTF-8")
-    for m in re.finditer(url_regex, text_bytes):
-        spans.append(
-            {
-                "start": m.start(1),
-                "end": m.end(1),
-                "url": m.group(1).decode("UTF-8"),
-            }
-        )
-    return spans
-
-
-def parse_facets(text: str) -> List[Dict]:
-    """
-    parses post text and returns a list of app.bsky.richtext.facet objects for any URLs (https://example.com)
-    """
-    facets = []
-    for u in parse_urls(text):
-        facets.append(
-            {
-                "index": {
-                    "byteStart": u["start"],
-                    "byteEnd": u["end"],
-                },
-                "features": [
-                    {
-                        "$type": "app.bsky.richtext.facet#link",
-                        # NOTE: URI ("I") not URL ("L")
-                        "uri": u["url"],
-                    }
-                ],
-            }
-        )
-    return facets
-
-
-def create_post(
-    text: str,
-    pds_url: str = "https://bsky.social",
-    handle: str = os.environ["BSKYBOT"],
-    password: str = os.environ["BSKYPWD"],
-):
-    """post on bluesky
-
-    Args:
-        text (str): text
-        pds_url (str, optional): bsky Defaults to "https://bsky.social".
-        handle (_type_, optional):  Defaults to os.environ["BSKYBOT"]. Set this environmental variable in your dotfile (bashrc/zshrc).
-        password (_type_, optional): _description_. Defaults to os.environ["BSKYPWD"].
-    """
-    session = bsky_login_session(pds_url, handle, password)
-    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    # these are the required fields which every post must include
-    post = {
-        "$type": "app.bsky.feed.post",
-        "text": text,
-        "createdAt": now,
-    }
-
-    # parse out mentions and URLs as "facets"
-    if len(text) > 0:
-        facets = parse_facets(post["text"])
-        if facets:
-            post["facets"] = facets
-
-    resp = requests.post(
-        pds_url + "/xrpc/com.atproto.repo.createRecord",
-        headers={"Authorization": "Bearer " + session["accessJwt"]},
-        json={
-            "repo": session["did"],
-            "collection": "app.bsky.feed.post",
-            "record": post,
-        },
-    )
-    print("createRecord response:", file=sys.stderr)
-    print(json.dumps(resp.json(), indent=2))
-    resp.raise_for_status()
-
-
-# %%
-# RSS feeds
 urls = {
     "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
     "American Sociological Review": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=etoc&feed=rss",
@@ -148,25 +34,6 @@ urls = {
 }
 
 
-def get_rss_feed(urls):
-    """Fetch the rss-feeds"""
-    results = {}
-    for k, v in urls.items():
-        f = feedparser.parse(v)
-        results.update(
-            {
-                entry.get("link", ""): {
-                    "title": entry.get("title", ""),
-                    "link": entry.get("link", ""),
-                    "description": entry.get("description", ""),
-                    "journal": k,
-                }
-                for entry in f.entries
-            }
-        )
-    return results
-
-
 def is_valid_paper(title, description):
     """Check if entry is a valid paper, not a review or other entry"""
     title_lower = title.lower()
@@ -178,6 +45,19 @@ def is_valid_paper(title, description):
             not title_lower.startswith("corrigendum"),
         ]
     )
+
+
+def filter_results(results):
+    filtered_results = {}
+    for k, v in results.items():
+        if is_valid_paper(v["title"], v["description"]):
+            journal = v.get("journal", "")
+            filtered_results[k] = {
+                **v,
+                "title": v["title"],
+                "description": clean_abstract(v["description"], journal),
+            }
+    return filtered_results
 
 
 def clean_abstract(text, journal):
@@ -204,75 +84,101 @@ def clean_abstract(text, journal):
     return text
 
 
-def filter_results(results):
-    filtered_results = {}
-    for k, v in results.items():
-        if is_valid_paper(v["title"], v["description"]):
-            journal = v.get("journal", "")
-            filtered_results[k] = {
-                **v,
-                "title": v["title"],
-                "description": clean_abstract(v["description"], journal),
-            }
-    return filtered_results
+class PosterBot:
+    def __init__(self, handle: str, password: str):
+        self.client = Client()
+        self.client.login(handle, password)
 
+    def create_post(self, title: str, link: str, description: str, authors: str):
+        """Create a Bluesky post with paper details"""
+        # Reserve characters for link and emoji
+        post_text = f"{title} ({authors}) {description} \n #sociology"[:288]
+        post_builder = client_utils.TextBuilder().link("link", link).text(post_text)
+        self.client.send_post(post_builder)
 
-# %%
-def write_json_from_rss(urls=urls, filename="combined.json"):
-    results = get_rss_feed(urls)
-    filtered_results = filter_results(results)
+    def get_rss_feed(self, urls=urls) -> Dict:
+        """Fetch and parse all RSS feeds."""
+        all_entries = {}
+        for journal, url in urls.items():
+            feed = feedparser.parse(url)
+            for entry in feed.entries:
+                link = entry.link.strip()
 
-    try:
-        with open(filename, "r") as f:
-            archive = json.load(f)
-    except FileNotFoundError:
-        archive = {}
+                author_str = entry.get("author", "").strip()
+                authors = []
+                if author_str:
+                    # Split authors by comma and clean empty names
+                    names = [
+                        name.strip() for name in author_str.split(",") if name.strip()
+                    ]
+                    # Extract last name of each author safely
+                    authors = [name.split()[-1] for name in names if name.split()]
 
-    new_archive = archive.copy()
+                authors_str = ", ".join(authors[:3])
+                if len(authors) > 3:
+                    authors_str += " et al"
 
-    # Append new items
-    for link, item_data in filtered_results.items():
-        if link not in archive:
-            new_archive[link] = item_data
+                all_entries[link] = {
+                    "title": entry.title.strip(),
+                    "link": entry.link.strip(),
+                    "description": (
+                        entry.description.split("Abstract:", 1)[1].strip()
+                        if "Abstract:" in entry.description
+                        else entry.description.strip()
+                    ),
+                    "authors": authors_str,
+                    "journal": journal,
+                }
+        return filter_results(all_entries)
 
-    if len(new_archive) > len(archive):
-        with open(filename, "w") as f:
-            json.dump(new_archive, f, indent=2)
-        print(f"{filename} updated")
+    def update_archive(self, feed: Dict, archive_file: str = "combined.json") -> tuple:
+        """Update archive with new entries"""
+        try:
+            with open(archive_file, "r") as f:
+                archive = json.load(f)
+        except FileNotFoundError:
+            archive = {}
 
-    return filtered_results, archive
+        new_archive = archive.copy()
+        for k, v in feed.items():
+            if k not in archive:
+                new_archive[k] = v
+
+        if len(new_archive) > len(archive):
+            with open(archive_file, "w") as f:
+                json.dump(new_archive, f)
+
+        return feed, archive
+
+    def run(self):
+        """Main bot loop"""
+        feed, archive = self.update_archive(self.get_rss_feed())
+        new_posts = 0
+
+        # Post new papers
+        for k, v in feed.items():
+            if k not in archive:
+                self.create_post(v["title"], v["link"], v["description"], v["authors"])
+                time.sleep(random.randint(60, 300))
+                new_posts += 1
+
+        # Post random paper if no new ones found
+        if new_posts == 0 and len(archive) > 2:
+            paper = random.choice(list(archive.values()))
+            # if paper contains key authors - back-compat
+            if "authors" in paper:
+                auth = paper["authors"]
+            else:
+                auth = ""
+            self.create_post(paper["title"], paper["link"], paper["description"], auth)
+            time.sleep(random.randint(30, 60))
 
 
 def main():
-    pull, archive = write_json_from_rss()
-    ######################################################################
-    # stats
-    ######################################################################
-    new_posts = 0
+    import os
 
-    # Append new data to existing data
-    for k, v in pull.items():
-        if k not in archive:  # if not already posted
-            post_str = (
-                f"{v['title']}\n{v['link']}\n{''.join(v['description'])}"[:288]
-                + "\n #sociology"
-            )
-            create_post(post_str.replace("\n", " "))
-            time.sleep(random.randint(60, 300))
-            archive[k] = v
-            new_posts += 1
-    # if new_posts == 0 & (len(archive) > 2):
-    #     print("No new papers found; posting random paper from archive")
-    #     random_paper = random.choice(list(archive.values()))
-    #     post_str = (
-    #         f"{random_paper['title']}\n{random_paper['link']}\n{''.join(random_paper['description'])}"[
-    #             :288
-    #         ]
-    #         + "\n #sociology"
-    #     )
-    #     create_post(post_str.replace("\n", " "))
-    #     time.sleep(random.randint(30, 60))
-    #
+    bot = PosterBot(os.environ["BSKYBOT"], os.environ["BSKYPWD"])
+    bot.run()
 
 
 # %%
