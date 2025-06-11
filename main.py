@@ -102,7 +102,7 @@ class PosterBot:
                 link = entry.link.strip()
                 author_str = entry.get("author", "").strip()
                 authors = []
-                
+
                 if author_str:
                     # Split authors by comma and clean empty names
                     names = [
@@ -112,8 +112,8 @@ class PosterBot:
                     for name in names:
                         name_parts = name.split()
                         if name_parts:  # Ensure there are parts to work with
-                        authors.append(name_parts[-1])
-            
+                            authors.append(name_parts[-1])
+
                 # Format authors string
                 if len(authors) == 0:
                     authors_str = ""
