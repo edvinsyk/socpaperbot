@@ -17,11 +17,11 @@ from atproto import Client, client_utils
 import feedparser
 
 urls = {
-    # "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
-    # "American Sociological Review": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=etoc&feed=rss",
+    "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
+    "American Sociological Review": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=etoc&feed=rss",
     "Annual Review of Sociology": "https://www.annualreviews.org/rss/content/journals/soc/latestarticles?fmt=rss",
     "Socius": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=srda&type=etoc&feed=rss",
-    # "Social Forces": "https://academic.oup.com/rss/site_5513/3374.xml",
+    "Social Forces": "https://academic.oup.com/rss/site_5513/3374.xml",
     # AJS not working atm, because they don't include abstracts in their RSS-feed
     "American Journal of Sociology": "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ajs",
     "SocArXiv": "https://share.osf.io/api/v2/feeds/atom/?elasticQuery=%7B%22bool%22%3A%7B%22must%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22*%22%7D%7D%2C%22filter%22%3A%5B%7B%22term%22%3A%7B%22sources%22%3A%22SocArXiv%22%7D%7D%5D%7D%7D",
@@ -86,10 +86,10 @@ class PosterBot:
         self.client = Client()
         self.client.login(handle, password)
 
-    def create_post(self, title: str, link: str, description: str, authors: str):
+    def create_post(self, title: str, link: str, description: str):
         """Create a Bluesky post with paper details"""
         # Reserve characters for link and emoji
-        post_text = f"{title} ({authors}) {description} \n #sociology"[:286]
+        post_text = f"{title} {description}"[:284] + "\n #sociology "
         post_builder = client_utils.TextBuilder().text(post_text).link("link", link)
         self.client.send_post(post_builder)
 
@@ -108,11 +108,6 @@ class PosterBot:
                         if "Abstract:" in entry.description
                         else entry.description.strip()
                     ),
-                    "authors": ", ".join(
-                        [name.split()[-1] for name in entry.author.split(", ")][:3]
-                    )
-                    + (" et al" if len(entry.author.split(", ")) > 3 else ""),
-                    "journal": journal,
                 }
         return filter_results(all_entries)
 
@@ -143,7 +138,7 @@ class PosterBot:
         # Post new papers
         for k, v in feed.items():
             if k not in archive:
-                self.create_post(v["title"], v["link"], v["description"], v["authors"])
+                self.create_post(v["title"], v["link"], v["description"])
                 time.sleep(random.randint(60, 300))
                 new_posts += 1
 
@@ -151,11 +146,7 @@ class PosterBot:
         if new_posts == 0 and len(archive) > 2:
             paper = random.choice(list(archive.values()))
             # if paper contains key authors - back-compat
-            if "authors" in paper:
-                auth = paper["authors"]
-            else:
-                auth = ""
-            self.create_post(paper["title"], paper["link"], paper["description"], auth)
+            self.create_post(paper["title"], paper["link"], paper["description"])
             time.sleep(random.randint(30, 60))
 
 
