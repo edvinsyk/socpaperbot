@@ -8,13 +8,10 @@ Thanks!
 """
 
 import json
-import os
 import random
 import re
-import sys
 import time
-from datetime import datetime, timezone
-from typing import Dict, List
+from typing import Dict
 from atproto import Client, client_utils
 
 import feedparser
