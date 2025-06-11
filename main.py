@@ -100,28 +100,6 @@ class PosterBot:
             feed = feedparser.parse(url)
             for entry in feed.entries:
                 link = entry.link.strip()
-                author_str = entry.get("author", "").strip()
-                authors = []
-
-                if author_str:
-                    # Split authors by comma and clean empty names
-                    names = [
-                        name.strip() for name in author_str.split(",") if name.strip()
-                    ]
-                    # Extract last name of each author safely
-                    for name in names:
-                        name_parts = name.split()
-                        if name_parts:  # Ensure there are parts to work with
-                            authors.append(name_parts[-1])
-
-                # Format authors string
-                if len(authors) == 0:
-                    authors_str = ""
-                elif len(authors) <= 3:
-                    authors_str = ", ".join(authors)
-                else:
-                    authors_str = ", ".join(authors[:3]) + " et al"
-
                 all_entries[link] = {
                     "title": entry.title.strip(),
                     "link": entry.link.strip(),
@@ -130,7 +108,10 @@ class PosterBot:
                         if "Abstract:" in entry.description
                         else entry.description.strip()
                     ),
-                    "authors": authors_str,
+                    "authors": ", ".join(
+                        [name.split()[-1] for name in entry.author.split(", ")][:3]
+                    )
+                    + (" et al" if len(entry.author.split(", ")) > 3 else ""),
                     "journal": journal,
                 }
         return filter_results(all_entries)
