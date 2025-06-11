@@ -89,7 +89,7 @@ class PosterBot:
     def create_post(self, title: str, link: str, description: str):
         """Create a Bluesky post with paper details"""
         # Reserve characters for link and emoji
-        post_text = f"{title} {description}"[:284] + "\n #sociology "
+        post_text = f"{title} {description}"[:280] + "\n #sociology "
         post_builder = client_utils.TextBuilder().text(post_text).link("link", link)
         self.client.send_post(post_builder)
 
