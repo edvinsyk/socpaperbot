@@ -17,11 +17,11 @@ from atproto import Client, client_utils
 import feedparser
 
 urls = {
-    "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
-    "American Sociological Review": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=etoc&feed=rss",
+    # "American Sociological Review (AoP)": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=axatoc&feed=rss",
+    # "American Sociological Review": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=asra&type=etoc&feed=rss",
     "Annual Review of Sociology": "https://www.annualreviews.org/rss/content/journals/soc/latestarticles?fmt=rss",
     "Socius": "https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=srda&type=etoc&feed=rss",
-    "Social Forces": "https://academic.oup.com/rss/site_5513/3374.xml",
+    # "Social Forces": "https://academic.oup.com/rss/site_5513/3374.xml",
     # AJS not working atm, because they don't include abstracts in their RSS-feed
     "American Journal of Sociology": "https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=ajs",
     "SocArXiv": "https://share.osf.io/api/v2/feeds/atom/?elasticQuery=%7B%22bool%22%3A%7B%22must%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22*%22%7D%7D%2C%22filter%22%3A%5B%7B%22term%22%3A%7B%22sources%22%3A%22SocArXiv%22%7D%7D%5D%7D%7D",
