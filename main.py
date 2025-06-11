@@ -89,8 +89,8 @@ class PosterBot:
     def create_post(self, title: str, link: str, description: str, authors: str):
         """Create a Bluesky post with paper details"""
         # Reserve characters for link and emoji
-        post_text = f"{title} ({authors}) {description} \n #sociology"[:288]
-        post_builder = client_utils.TextBuilder().link("link", link).text(post_text)
+        post_text = f"{title} ({authors}) {description} \n#sociology"[:286]
+        post_builder = client_utils.TextBuilder().text(post_text).link("link", link)
         self.client.send_post(post_builder)
 
     def get_rss_feed(self, urls=urls) -> Dict:
